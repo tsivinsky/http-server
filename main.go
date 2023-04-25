@@ -78,7 +78,7 @@ func main() {
 
 		uri, _ := url.Parse(s[1])
 
-		conn.Write([]byte("HTTP/3 200 OK\r\n"))
+		conn.Write([]byte("HTTP/1.1 200 OK\r\n"))
 		conn.Write([]byte("Content-Type: text/html\r\n"))
 
 		conn.Write([]byte("\r\n"))
